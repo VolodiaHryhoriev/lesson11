@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="firstBlock">
+            <h3 id="curentDate">22.02.2022</h3>
+            <h1 id="curentTime">12.00.00</h1>
+        </div>
+        <div class="secondBlock">
+            <div>
+                <div id="stopwatchBlock">
+                    <h2 id="watch"><span id="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span>:<span id="millisecond">000</span></h2>
+                </div>
+                <div class="stopwatchBlockBut">
+                    <input type="button" id="start" value="Start">
+                    <input type="button" id="loop" value="Loop">
+                    <input type="button" id="stop" value="Stop">
+                    <input type="button" id="reset" value="Reset">
+                </div>
+            </div>
+            <div id="loopBlock">
+
+            </div>
+        </div>
+        <div class="thirdBlock">
+            <div id="setTimerBlock">
+                <h1 id="setMinutes"></h1>
+                <h4>minutes</h4>
+                <input type="button" class="changeMinutes" id="addMin" value="+">
+                <input type="button" class="changeMinutes" id="reduceMin" value="-">
+            </div>
+            <div id="timerBlock">
+                <h1 id="timeLeft">Timer</h1>
+                <input type="button" id="timerStart" value="Start">
+                <input type="button" id="timerStop" value="Stop">
+                <input type="button" id="timerReset" value="Reset">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
