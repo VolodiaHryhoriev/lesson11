@@ -91,7 +91,7 @@ function returnData(input) {
 
 // start timer function
 
-let count = 1
+let count = 25;
 let value;
 document.getElementById('setMinutes').innerHTML = count
     // document.getElementById('timeLeft').innerHTML = count
@@ -124,14 +124,17 @@ let timerShow = document.getElementById('timeLeft');
 //         hour++;
 //     }
 // }
+
+
 let myInt
 
 function startTimer() {
     let timeMinut = parseInt(document.getElementById('setMinutes').innerHTML) * 60;
-    stopTimer();
     myInt = setInterval(() => {
         let seconds = timeMinut % 60;
         let minutes = timeMinut / 60 % 60;
+        if (seconds < 10) seconds = '0' + seconds;
+        if (minutes < 10) minutes = '0' + minutes;
         if (timeMinut === 0) {
             clearInterval(myInt);
         } else {
